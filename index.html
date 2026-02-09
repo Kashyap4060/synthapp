@@ -22,8 +22,29 @@
             --white: #FFFFFF;
             --off-white: #F8F9FA;
             --light-gray: #E5E5E5;
-            --text-gray: #666666;
+            --text-gray: #000000;
             --whatsapp-green: #25D366;
+            --orange: #FF6B6B;
+            --yellow: #FFC107;
+            --blue: #0066B3;
+            --black: #000000;
+            --white: #FFFFFF;
+            --dark-blue: #004080;
+            --light-blue: #0066B3;
+            --light-green: #25D366;
+            --light-orange: #FF6B6B;
+            --light-yellow: #FFC107;
+            --red: #FF0000;
+            --green: #00FF00;
+            --blue: #0000FF;
+            --yellow: #FFFF00;
+            --orange: #FFA500;
+            --purple: #800080;
+            --pink: #FFC0CB;
+            --brown: #A52A2A;
+            --gray: #808080;
+            --black: #000000;
+            --white: #FFFFFF;
 
             /* Typography */
             --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -106,20 +127,27 @@
 
         .hero p {
             font-size: clamp(18px, 3vw, 22px);
-            color: var(--text-gray);
-            font-weight: 400;
+            color: var(--white);
+            font-weight: 800;
             margin-bottom: 48px;
             line-height: 1.6;
         }
 
         /* Discount Text */
         .discount-text {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 24px auto;
             font-size: 16px;
-            font-weight: 500;
-            color: var(--jersey-blue);
-            margin-bottom: 24px;
+            font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            font-family: var(--font-main);
+            border-radius: 10px;
+            padding: 10px 10px;
+            background-color: var(--black);
+            color: var(--white);
+            text-decoration: none;
         }
 
         /* WhatsApp Button */
@@ -159,7 +187,7 @@
         }
 
         .about p {
-            color: var(--text-gray);
+            color: var(--black);
             line-height: 1.8;
         }
 
@@ -217,7 +245,7 @@
         }
 
         .bottom-cta p {
-            color: var(--text-gray);
+            color: var(--white);
             margin-bottom: 48px;
             line-height: 1.7;
         }
@@ -257,7 +285,7 @@
             text-align: center;
             padding: 64px 24px;
             font-size: 14px;
-            color: var(--text-gray);
+            color: var(--black);
             border-top: 1px solid var(--light-gray);
         }
 
@@ -409,8 +437,8 @@
          */
 
         // Uncomment and customize for HEADER background:
-        document.documentElement.style.setProperty('--header-bg-image', 'url("footer.jpg")');
-        document.documentElement.style.setProperty('--header-bg-opacity', '0.4');
+        document.documentElement.style.setProperty('--header-bg-image', 'url("Header.jpg")');
+        document.documentElement.style.setProperty('--header-bg-opacity', '1');
 
         /**
          * FOOTER/BOTTOM CTA SECTION BACKGROUND:
@@ -424,8 +452,8 @@
          */
 
         // Uncomment and customize for FOOTER background:
-        document.documentElement.style.setProperty('--footer-bg-image', 'url("Header.jpg")');
-        document.documentElement.style.setProperty('--footer-bg-opacity', '0.5');
+        document.documentElement.style.setProperty('--footer-bg-image', 'url("footer.jpg")');
+        document.documentElement.style.setProperty('--footer-bg-opacity', '1');
 
         /**
          * WhatsApp Configuration
